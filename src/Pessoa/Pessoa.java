@@ -1,4 +1,4 @@
-package pessoa;
+package Pessoa;
 
 //Classe Pessoa
 public class Pessoa {

@@ -1,4 +1,4 @@
-package pessoa;
+package Pessoa;
 
 //Classe Principal
 public class Principal {
