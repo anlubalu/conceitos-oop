@@ -1,6 +1,6 @@
 package br.com.alura.conceitosoop.modelos;
 
-public class Filme extends Titulo{
+public class Filme extends Titulo implements Classificavel{
 private String diretor;
 
     public String getDiretor() {
@@ -9,5 +9,10 @@ private String diretor;
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public int getClassificacao() {
+        return (int) pegaMedia() / 2;
     }
 }

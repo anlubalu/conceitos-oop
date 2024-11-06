@@ -14,5 +14,12 @@ public class Principal {
 
         conta.sacar(1700);
         System.out.println("Novo Saldo: " + conta.getSaldo());
+
+        ContaCorrente contaCorrente = new ContaCorrente();
+        contaCorrente.depositar(200);
+        contaCorrente.cobrarTarifaMensal();
+        contaCorrente.getSaldo();
+        contaCorrente.sacar(150);
+        contaCorrente.getSaldo();
     }
 }

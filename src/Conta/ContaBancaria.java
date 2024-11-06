@@ -2,7 +2,7 @@ package Conta;
 
 public class ContaBancaria {
     private int numeroConta;
-    private double saldo = 0;
+    protected double saldo = 0;
 //    protected double saldo;
     public String titular;
 
