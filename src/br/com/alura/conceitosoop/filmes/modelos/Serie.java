@@ -1,4 +1,4 @@
-package br.com.alura.conceitosoop.modelos;
+package br.com.alura.conceitosoop.filmes.modelos;
 
 public class Serie extends Titulo{
 

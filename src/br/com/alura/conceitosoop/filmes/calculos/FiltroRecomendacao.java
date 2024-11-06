@@ -1,4 +1,4 @@
-package br.com.alura.conceitosoop.modelos;
+package br.com.alura.conceitosoop.filmes.calculos;
 
 public class FiltroRecomendacao {
 

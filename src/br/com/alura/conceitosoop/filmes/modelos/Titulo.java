@@ -1,4 +1,4 @@
-package br.com.alura.conceitosoop.modelos;
+package br.com.alura.conceitosoop.filmes.modelos;
 
 public class Titulo {
     private String nome;
@@ -12,6 +12,10 @@ public class Titulo {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {

@@ -1,6 +1,8 @@
-package br.com.alura.conceitosoop.modelos;
+package br.com.alura.conceitosoop.filmes.modelos;
 
-public class Episodio implements Classificavel{
+import br.com.alura.conceitosoop.filmes.calculos.Classificavel;
+
+public class Episodio implements Classificavel {
     private int numero;
     private String nome;
     private Serie serie;

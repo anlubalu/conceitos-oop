@@ -1,6 +1,8 @@
-package br.com.alura.conceitosoop.modelos;
+package br.com.alura.conceitosoop.filmes.modelos;
 
-public class Filme extends Titulo implements Classificavel{
+import br.com.alura.conceitosoop.filmes.calculos.Classificavel;
+
+public class Filme extends Titulo implements Classificavel {
 private String diretor;
 
     public String getDiretor() {
