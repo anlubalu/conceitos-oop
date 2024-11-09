@@ -1,6 +1,8 @@
 package Conta;
 
-public class ContaBancaria {
+import java.util.Comparator;
+
+public class ContaBancaria implements Comparable<ContaBancaria> {
     private int numeroConta;
     protected double saldo = 0;
 //    protected double saldo;
@@ -35,6 +37,25 @@ public class ContaBancaria {
             System.out.println("Saque realizado com sucesso. Saldo atual: " +saldo);
         } else {
             System.out.println("Saldo insuficiente.");
+        }
+    }
+
+    public ContaBancaria() {
+    }
+
+    public ContaBancaria(int numeroConta, double saldo) {
+        this.numeroConta = numeroConta;
+        this.saldo = saldo;
+    }
+
+    @Override
+    public int compareTo(ContaBancaria outra) {
+        if (this.getSaldo() < outra.getSaldo()) {
+            return 1;
+        } else if (this.getSaldo() > outra.getSaldo()) {
+            return -1;
+        } else {
+            return 0;
         }
     }
 }

@@ -1,6 +1,6 @@
 package br.com.alura.conceitosoop.filmes.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -24,6 +24,10 @@ public class Titulo {
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
@@ -53,5 +57,18 @@ public class Titulo {
         return media;
     }
 
+    @Override
+    public String toString() {
+        return "Série: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
+    }
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }
